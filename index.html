@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amorinha Sorvetes e Açaí - Relatório Meta Ads</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <svg class="logo-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Circle Border -->
+                        <circle cx="200" cy="200" r="180" fill="none" stroke="#534AB7" stroke-width="12"/>
+                        
+                        <!-- Grapes -->
+                        <g id="grapes">
+                            <!-- Top left grape -->
+                            <circle cx="160" cy="100" r="18" fill="#4a2e7f"/>
+                            <!-- Top middle grapes -->
+                            <circle cx="200" cy="85" r="18" fill="#6b4ba8"/>
+                            <circle cx="240" cy="100" r="18" fill="#4a2e7f"/>
+                            <!-- Middle row -->
+                            <circle cx="140" cy="130" r="18" fill="#6b4ba8"/>
+                            <circle cx="180" cy="120" r="18" fill="#7d5ab8"/>
+                            <circle cx="220" cy="120" r="18" fill="#6b4ba8"/>
+                            <circle cx="260" cy="130" r="18" fill="#4a2e7f"/>
+                            <!-- Bottom row -->
+                            <circle cx="160" cy="160" r="18" fill="#7d5ab8"/>
+                            <circle cx="200" cy="155" r="18" fill="#5a3d8f"/>
+                            <circle cx="240" cy="160" r="18" fill="#7d5ab8"/>
+                        </g>
+                        
+                        <!-- Leaves -->
+                        <g id="leaves" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round">
+                            <path d="M 200 75 Q 210 60 215 50"/>
+                            <path d="M 200 75 Q 190 60 185 50"/>
+                            <path d="M 200 75 Q 225 65 240 60"/>
+                        </g>
+                        
+                        <!-- Orange dots around circle -->
+                        <g id="dots" fill="#E8965E">
+                            <circle cx="140" cy="30" r="8"/>
+                            <circle cx="190" cy="20" r="8"/>
+                            <circle cx="260" cy="40" r="8"/>
+                            <circle cx="310" cy="100" r="8"/>
+                            <circle cx="330" cy="160" r="8"/>
+                            <circle cx="320" cy="230" r="8"/>
+                            <circle cx="260" cy="290" r="8"/>
+                            <circle cx="180" cy="310" r="8"/>
+                            <circle cx="100" cy="300" r="8"/>
+                            <circle cx="50" cy="240" r="8"/>
+                            <circle cx="40" cy="160" r="8"/>
+                            <circle cx="70" cy="80" r="8"/>
+                        </g>
+                        
+                        <!-- Text: Amorinha -->
+                        <text x="200" y="280" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#534AB7" text-anchor="middle">Amorinha</text>
+                        
+                        <!-- Text: Sorvetes e Açaí -->
+                        <text x="200" y="310" font-family="Arial, sans-serif" font-size="16" fill="#5F5E5A" text-anchor="middle" letter-spacing="2">SORVETES E AÇAÍ</text>
+                    </svg>
+                    <span class="subtitle">Relatório Meta Ads</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#visao-geral">Visão Geral</a></li>
+                    <li><a href="#campanhas">Campanhas</a></li>
+                    <li><a href="#geografia">Geografia</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#recomendacoes">Recomendações</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO COVER -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <svg class="hero-logo-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Circle Border -->
+                    <circle cx="200" cy="200" r="180" fill="none" stroke="#534AB7" stroke-width="12"/>
+                    
+                    <!-- Grapes -->
+                    <g id="grapes">
+                        <!-- Top left grape -->
+                        <circle cx="160" cy="100" r="18" fill="#4a2e7f"/>
+                        <!-- Top middle grapes -->
+                        <circle cx="200" cy="85" r="18" fill="#6b4ba8"/>
+                        <circle cx="240" cy="100" r="18" fill="#4a2e7f"/>
+                        <!-- Middle row -->
+                        <circle cx="140" cy="130" r="18" fill="#6b4ba8"/>
+                        <circle cx="180" cy="120" r="18" fill="#7d5ab8"/>
+                        <circle cx="220" cy="120" r="18" fill="#6b4ba8"/>
+                        <circle cx="260" cy="130" r="18" fill="#4a2e7f"/>
+                        <!-- Bottom row -->
+                        <circle cx="160" cy="160" r="18" fill="#7d5ab8"/>
+                        <circle cx="200" cy="155" r="18" fill="#5a3d8f"/>
+                        <circle cx="240" cy="160" r="18" fill="#7d5ab8"/>
+                    </g>
+                    
+                    <!-- Leaves -->
+                    <g id="leaves" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round">
+                        <path d="M 200 75 Q 210 60 215 50"/>
+                        <path d="M 200 75 Q 190 60 185 50"/>
+                        <path d="M 200 75 Q 225 65 240 60"/>
+                    </g>
+                    
+                    <!-- Orange dots around circle -->
+                    <g id="dots" fill="#E8965E">
+                        <circle cx="140" cy="30" r="8"/>
+                        <circle cx="190" cy="20" r="8"/>
+                        <circle cx="260" cy="40" r="8"/>
+                        <circle cx="310" cy="100" r="8"/>
+                        <circle cx="330" cy="160" r="8"/>
+                        <circle cx="320" cy="230" r="8"/>
+                        <circle cx="260" cy="290" r="8"/>
+                        <circle cx="180" cy="310" r="8"/>
+                        <circle cx="100" cy="300" r="8"/>
+                        <circle cx="50" cy="240" r="8"/>
+                        <circle cx="40" cy="160" r="8"/>
+                        <circle cx="70" cy="80" r="8"/>
+                    </g>
+                    
+                    <!-- Text: Amorinha -->
+                    <text x="200" y="280" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#534AB7" text-anchor="middle">Amorinha</text>
+                    
+                    <!-- Text: Sorvetes e Açaí -->
+                    <text x="200" y="310" font-family="Arial, sans-serif" font-size="16" fill="#5F5E5A" text-anchor="middle" letter-spacing="2">SORVETES E AÇAÍ</text>
+                </svg>
+            </div>
+            <div class="hero-text">
+                <h2>Amorinha Sorvetes e Açaí</h2>
+                <p class="hero-sub">Relatório de Desempenho · Meta Ads</p>
+                <p class="hero-date">Período: 04/06/2026 a 12/06/2026</p>
+                <p class="hero-desc">Análise completa de investimento, alcance, conversões e recomendações estratégicas.</p>
+                <div class="hero-meta">
+                    <span>📊 Gerado em: 12/06/2026</span>
+                    <span class="confidencial">🔒 Confidencial</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- VISÃO GERAL -->
+        <section id="visao-geral" class="section">
+            <div class="container">
+                <h2 class="section-title">VISÃO GERAL</h2>
+                <div class="summary-box" data-aos="fade-up">
+                    <p>
+                        No período de <strong>04 a 12 de junho de 2026</strong>, a conta Amorinha Sorvetes e Açaí gerou 
+                        <strong>155.417 impressões</strong> e alcançou <strong>72.288 pessoas</strong> com investimento de <strong>R$ 869,95</strong>. 
+                        A entrega ocorreu quase integralmente via Mobile App (97%). A audiência concentrou-se nas faixas 
+                        <strong>18–34 anos</strong> com predominância <strong>feminina</strong>, sinalizando um perfil claro de consumo. 
+                        O período fechou com <strong>44 leads</strong> (R$ 19,77/lead) e <strong>17 conversas iniciadas</strong>, sendo 14 pelo Instagram.
+                    </p>
+                </div>
+
+                <!-- KPIs Grid -->
+                <div class="kpi-grid">
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="kpi-value">R$ 869,95</div>
+                        <div class="kpi-label">Valor investido</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="50">
+                        <div class="kpi-value">155.417</div>
+                        <div class="kpi-label">Impressões totais</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="kpi-value">72.288</div>
+                        <div class="kpi-label">Alcance total</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="kpi-value">1.460</div>
+                        <div class="kpi-label">Cliques no link</div>
+                    </div>
+
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="kpi-value">R$ 0,60</div>
+                        <div class="kpi-label">CPC médio</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="kpi-value">1,16%</div>
+                        <div class="kpi-label">CTR</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="kpi-value">R$ 5,60</div>
+                        <div class="kpi-label">CPM médio</div>
+                    </div>
+                    <div class="kpi-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="kpi-value">2,15</div>
+                        <div class="kpi-label">Frequência</div>
+                    </div>
+
+                    <div class="kpi-card double" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="kpi-value">44</div>
+                        <div class="kpi-label">Leads gerados</div>
+                        <div class="kpi-sub">R$ 19,77 / lead</div>
+                    </div>
+                    <div class="kpi-card double" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="kpi-value">17</div>
+                        <div class="kpi-label">Conversas iniciadas</div>
+                        <div class="kpi-sub">14 Instagram · 3 Facebook</div>
+                    </div>
+                    <div class="kpi-card double" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="kpi-value">97%</div>
+                        <div class="kpi-label">Entrega mobile</div>
+                        <div class="kpi-sub">Mobile App</div>
+                    </div>
+                    <div class="kpi-card double" data-aos="zoom-in" data-aos-delay="550">
+                        <div class="kpi-value">R$ 276</div>
+                        <div class="kpi-label">Invest. em Goiás</div>
+                        <div class="kpi-sub">32% do total</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMPANHAS -->
+        <section id="campanhas" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">CAMPANHAS EM DESTAQUE</h2>
+                
+                <div class="campaigns-table-wrapper" data-aos="fade-up">
+                    <table class="campaigns-table">
+                        <thead>
+                            <tr>
+                                <th>Campanha</th>
+                                <th>Resultado</th>
+                                <th>Custo/Result.</th>
+                                <th>Investido</th>
+                                <th>Alcance</th>
+                                <th>CTR</th>
+                                <th>CPC</th>
+                                <th>CPM</th>
+                                <th>Freq.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Reconh. AMR 10/06</strong></td>
+                                <td>4.311 Alcance</td>
+                                <td>R$4,78</td>
+                                <td>R$20,61</td>
+                                <td>4.311</td>
+                                <td>1,26%</td>
+                                <td>R$0,34</td>
+                                <td>R$4,26</td>
+                                <td>1,12</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reconh. Limeira 04/06</strong></td>
+                                <td>4.034 Alcance</td>
+                                <td>R$5,31</td>
+                                <td>R$21,42</td>
+                                <td>4.034</td>
+                                <td>0,76%</td>
+                                <td>R$0,55</td>
+                                <td>R$4,18</td>
+                                <td>1,27</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Impuls. AMR</strong></td>
+                                <td>117 Visitas</td>
+                                <td>R$0,15</td>
+                                <td>R$17,95</td>
+                                <td>1.875</td>
+                                <td>3,24%</td>
+                                <td>R$0,21</td>
+                                <td>R$6,84</td>
+                                <td>1,4</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Impuls. Oficial 08/06</strong></td>
+                                <td>112 Visitas</td>
+                                <td>R$0,13</td>
+                                <td>R$14,74</td>
+                                <td>2.948</td>
+                                <td>3,17%</td>
+                                <td>R$0,14</td>
+                                <td>R$4,50</td>
+                                <td>1,11</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Impuls. Limeira 04/06</strong></td>
+                                <td>105 Visitas</td>
+                                <td>R$0,56</td>
+                                <td>R$59,07</td>
+                                <td>3.024</td>
+                                <td>0,98%</td>
+                                <td>R$0,60</td>
+                                <td>R$5,89</td>
+                                <td>3,32</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">* Impuls. Limeira 04/06 apresenta frequência 3,32 — sinal de saturação de público.</p>
+            </div>
+        </section>
+
+        <!-- DISTRIBUIÇÃO GEOGRÁFICA -->
+        <section id="geografia" class="section">
+            <div class="container">
+                <h2 class="section-title">DISTRIBUIÇÃO GEOGRÁFICA</h2>
+                
+                <div class="geo-grid" data-aos="fade-up">
+                    <div class="geo-chart">
+                        <canvas id="chartRegioes"></canvas>
+                    </div>
+                    <div class="geo-table-wrapper">
+                        <table class="geo-table">
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Alcance</th>
+                                    <th>Impressões</th>
+                                    <th>Frequência</th>
+                                    <th>Invest.</th>
+                                    <th>CPM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Minas Gerais</strong></td>
+                                    <td>30.421</td>
+                                    <td>76.507</td>
+                                    <td>2,51</td>
+                                    <td>R$450,11</td>
+                                    <td>R$5,88</td>
+                                </tr>
+                                <tr class="highlight-goias">
+                                    <td><strong>Goiás</strong></td>
+                                    <td>26.347</td>
+                                    <td>49.969</td>
+                                    <td>1,90</td>
+                                    <td>R$276,27</td>
+                                    <td>R$5,53</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mato Grosso do Sul</strong></td>
+                                    <td>13.885</td>
+                                    <td>22.956</td>
+                                    <td>1,65</td>
+                                    <td>R$115,68</td>
+                                    <td>R$5,04</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mato Grosso</strong></td>
+                                    <td>2.485</td>
+                                    <td>4.798</td>
+                                    <td>1,93</td>
+                                    <td>R$22,39</td>
+                                    <td>R$4,67</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>São Paulo</strong></td>
+                                    <td>215</td>
+                                    <td>217</td>
+                                    <td>1,01</td>
+                                    <td>R$1,38</td>
+                                    <td>R$6,36</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISTRIBUIÇÃO E CONVERSAS -->
+        <section id="plataformas" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">DISTRIBUIÇÃO DE ENTREGA E CONVERSAS</h2>
+                
+                <div class="pie-grid" data-aos="fade-up">
+                    <div class="pie-container">
+                        <canvas id="chartDevice"></canvas>
+                        <p class="pie-label"><strong>Plataforma de dispositivo:</strong> 97% Mobile App</p>
+                    </div>
+                    <div class="pie-container">
+                        <canvas id="chartConversas"></canvas>
+                        <p class="pie-label"><strong>Conversas iniciadas:</strong> 82% Instagram · 18% Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESEMPENHO DAS CAMPANHAS -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">DESEMPENHO DAS CAMPANHAS</h2>
+                
+                <div class="campaign-chart-wrapper" data-aos="fade-up">
+                    <canvas id="chartCampanhas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- PONTOS DE ATENÇÃO -->
+        <section id="insights" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">PONTOS DE ATENÇÃO</h2>
+                
+                <div class="insights-grid">
+                    <div class="insight-card insight-red" data-aos="fade-up" data-aos-delay="0">
+                        <h3>🔴 Concentração geográfica</h3>
+                        <p>Goiás consome 32% do budget (R$276) com frequência de 1,9. Estados como São Paulo têm apenas 215 pessoas alcançadas. A saturação nesse público reduz eficiência à medida que a campanha escala.</p>
+                    </div>
+                    
+                    <div class="insight-card insight-amber" data-aos="fade-up" data-aos-delay="100">
+                        <h3>🟡 Frequência elevada na Limeira 04/06</h3>
+                        <p>Frequência de 3,32 indica que o mesmo público viu o anúncio mais de 3x. Isso eleva CPM sem adicionar alcance novo, sendo necessário renovar criativo ou expandir o público.</p>
+                    </div>
+                    
+                    <div class="insight-card insight-teal" data-aos="fade-up" data-aos-delay="200">
+                        <h3>🟢 Pico de conversão às 19h–20h</h3>
+                        <p>13.411 impressões às 19h e 11.595 às 20h com alcance de 11.372 e 9.980 respectivamente. Concentrar orçamento nesse horário maximiza eficiência com o mesmo investimento.</p>
+                    </div>
+                    
+                    <div class="insight-card insight-purple" data-aos="fade-up" data-aos-delay="300">
+                        <h3>🟣 Instagram domina (82% das conversas)</h3>
+                        <p>14 de 17 conversas vieram do Instagram. Rodar campanhas de Mensagens e Cadastro em paralelo nessa plataforma pode capturar mais demanda quente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECOMENDAÇÕES -->
+        <section id="recomendacoes" class="section">
+            <div class="container">
+                <h2 class="section-title">RECOMENDAÇÕES ESTRATÉGICAS</h2>
+                
+                <div class="recommendations">
+                    <div class="rec-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="rec-number">01</div>
+                        <div class="rec-content">
+                            <h3>Redistribuição de orçamento por estado</h3>
+                            <p>Criar 2–3 grupos de verba separados: Goiás / estados prioritários (MG, MS) / mercados em teste. Hoje Goiás concentra R$276 enquanto SP tem apenas R$1,38 investidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="rec-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="rec-number">02</div>
+                        <div class="rec-content">
+                            <h3>Concentrar entrega no pico das 19h–20h</h3>
+                            <p>Os maiores volumes de impressões e alcance ocorrem nesse intervalo. Programar a entrega nesses horários acelera o aprendizado com a mesma verba.</p>
+                        </div>
+                    </div>
+
+                    <div class="rec-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="rec-number">03</div>
+                        <div class="rec-content">
+                            <h3>Rodar Mensagens e Cadastro em paralelo</h3>
+                            <p>Com 44 leads a R$19,77 e 17 conversas iniciadas, ambos os objetivos têm tração. Operar os dois simultaneamente amplia a captura de demanda quente.</p>
+                        </div>
+                    </div>
+
+                    <div class="rec-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="rec-number">04</div>
+                        <div class="rec-content">
+                            <h3>Criativos orientados ao perfil 18–34 feminino</h3>
+                            <p>A audiência com maior engajamento é feminina entre 18 e 34 anos. Adaptar comunicação, linguagem e imagens para esse perfil tende a melhorar CTR e relevância.</p>
+                        </div>
+                    </div>
+
+                    <div class="rec-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="rec-number">05</div>
+                        <div class="rec-content">
+                            <h3>Renovar criativo na Impuls. Limeira 04/06</h3>
+                            <p>Frequência 3,32 indica esgotamento de audiência. Trocar o criativo ou ampliar o público evita desperdício de verba com usuários já super-expostos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSÃO -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="conclusion-box" data-aos="fade-up">
+                    <h3>Conclusão</h3>
+                    <p>
+                        O período demonstrou que a conta tem perfil de audiência definido e tração em conversas pelo Instagram. 
+                        O próximo ciclo deve focar em <strong>expansão geográfica controlada</strong>, <strong>renovação de criativos nas campanhas saturadas</strong> 
+                        e <strong>concentração de entrega no horário de pico</strong> para maximizar o retorno sobre o investimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Amorinha Sorvetes e Açaí. Relatório gerado em 12/06/2026.</p>
+            <p class="confidencial">🔒 Documento Confidencial</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
